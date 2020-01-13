@@ -32,14 +32,26 @@ min-height: 100vh;
   color: white;
 
 }
+.App-table{
+  font-size: calc(3px+ 1vmin);
+  color: white;
+  display: inline-block;
 
-.App-labels{
-font-size: calc(3px+ 1vmin);
-color: white;
-text-align: left;
 
 }
 
+/* .App-labels{
+font-size: calc(3px+ 1vmin);
+color: white;
+display: inline-block;
+width: 80px;
+}
+
+.App-inputs{
+  display: inline-block;
+
+
+} */
 
 .App-link {
   color: #61dafb;

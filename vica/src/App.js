@@ -9,16 +9,21 @@ class App extends Component {
                 <div className="App-body">
                   <header className="App-header">
                     <h1> Login </h1>
-                </header>
-                  <label className= "App-labels">Usuario   :
-                  <input type="text" name="Usuario" />
-                 </label>
-                  <br></br>
-                  <label className= "App-labels">Contraseña:
-                  <input type="text" name="password" />
-                  </label>
-                  <br></br>
-                  <button> Ingresar </button>
+                  </header>
+                  <table className="App-table">
+
+                  <tr>
+                    <td>  <label className= "App-labels">Usuario: </label></td>
+                    <td>  <input  className="App-inputs"  type="text" name="Usuario" /></td>
+
+                    </tr>
+                      <tr>
+                          <td>  <label className= "App-labels">Contraseña:   </label></td>
+                          <td>    <input className="App-inputs" type="text" name="password" /></td>
+                    </tr>
+                    </table>
+                    <br></br>
+                <button> Ingresar </button>
               </div>
       </div>
     );
