@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import './App.css';
-import {hashHistory } from 'react-router';
-import {BrowserRouter as Router , Switch, Route, HashRouter } from "react-router-dom";
+import {Route, HashRouter } from "react-router-dom";
 
 
 import Consres from "./Consres.js";//pagina
+import Constrab from "./Constrab.js"
 import Botonnav from "./Botonnav.js"
 
 
@@ -30,7 +30,7 @@ class App extends Component {
                   <div>
                   <HashRouter>
                             <Botonnav />
-                            <Route path='/Consres' component={Consres}/>
+                            <Route path='/Constrab' component={Constrab}/>
                   </HashRouter>
                   </div>
                 </div>

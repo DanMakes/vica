@@ -1,16 +1,13 @@
 .Consres
 {
-
+color: white;
 
 
 }
 
 .Consres-header{
-
 text-align: Center;
-
-
-
+color: black;
 }
 
 .Conres-body
@@ -31,5 +28,30 @@ text-align: Center;
   margin-bottom: 10vh;
   border-collapse: separate;
   border-spacing: 10px 15px ;
+  border: solid 3px;
+  border-color: white;
+
+
+}
+
+.Consres-moneda{
+  background-image: url("./money.png")  ;
+  background-repeat: no-repeat;
+  text-align: right;
+  width: 90px;
+  background-position: 3px;
+}
+
+
+
+
+.Conres-table2
+{
+  color:white;
+  margin-bottom: 100px ;
+  border-collapse: separate;
+  border-spacing: 10px 15px;
+  border: solid 3px;
+  border-color: white;
 
 }

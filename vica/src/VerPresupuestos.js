@@ -2,25 +2,30 @@ import  React, {Component}  from 'react';
 import'./Estilos/Consres.css';
 import refresh from './Imagenes/refresh.png';
 
-import Recibos from './Recibos.js';
-import Items from './Itemres.js';
-///import money from './Imagenes/money.png';
-import Pago from './Pagosres.js';
+
+import Presupuestos from "./Presupuesto.js"
+import Detalle from "./DetallePres.js"
 
 //Elementos del material-ui
 
 
-class Consres extends Component {
+  class VerPresupuestos extends Component {
   constructor(props) {
     super(props);
     this.state = ({ FechaDesde: '' ,
                     FechaHasta: '',
-                    Sucursal: ''
+                    Sucursal: '',
+                    Rubro: '',
+                    Situaciones: '',
+
   })
      this.procesar = this.procesar.bind(this);
      this.cambioFechaDesde =this.cambioFechaDesde.bind(this);
-    this.cambioFechaHasta =this.cambioFechaHasta.bind(this);
+     this.cambioFechaHasta =this.cambioFechaHasta.bind(this);
      this.cambioSucursal =this.cambioSucursal.bind(this);
+     this.cambioRubro =this.cambioRubro.bind(this);
+     this.cambioSituaciones =this.cambioSituaciones.bind(this);
+
   }
 
   render() {
@@ -28,7 +33,7 @@ class Consres extends Component {
       <div className="Consres">
 
                <header className="Consres-header">
-                 <h1> Consultar recibos </h1>
+                 <h1> Presupuestos </h1>
                </header>
 
                 <div className="Conres-body">
@@ -41,6 +46,11 @@ class Consres extends Component {
                                <td > <input id="date" type="date" value={this.state.FechaHasta} onChange={this.cambioFechaHasta} /></td>
                                <td>Sucursal:</td>
                                <td><select name="Seleccione"><option value="">(TODAS)</option></select></td>
+                               <td>Rubro:</td>
+                               <td><select name="Seleccione"><option value="">(TODOS)</option></select></td>
+                               <td><select name="Situaciones"><option value="">Situaciones</option></select></td>
+                               <td>Sin OT:</td>
+                               <td><select name="Seleccione"><option value="">(AMBOS)</option></select></td>
                                <td><input type="Image" src={refresh} className="Consres-logo" alt="refresh"  height="20" width="20" /></td>
                                <td><input className="Consres-moneda" type="submit" value="Agregar"  /></td>
                            </tr>
@@ -48,19 +58,18 @@ class Consres extends Component {
                       </form>
                         <table className="Consres-Recibos">
                         <tr>
-                            <td>Recibos</td>
+                            <td>Presupuestos</td>
                         </tr>
-                            <td>  <Recibos />  </td>
+                            <td> <Presupuestos />  </td>
                         </table>
 
                         <table className="Conres-table2">
                             <tr>
-                            <td align="Center"> Items del Recibo </td>
-                            <td align="center"> Pagos del Recibo </td>
+                            <td align="Center"> Detalle del Presupuesto  </td>
                             </tr>
                               <tr>
-                              <td align="left"> <Items /></td>
-                              <td >  <Pago />  </td>
+
+                              <td ><Detalle /> </td>
                             </tr>
                         </table>
 
@@ -73,7 +82,10 @@ class Consres extends Component {
    e.preventDefault();
    alert('Dato cargado '+this.stateFechaDesde + ' ' +
                         +this.state.FechaHasta + ' ' +
-                        +this.state.Sucursal);
+                        +this.state.Sucursal + ' ' +
+                        +this.state.Rubro + ' ' +
+                        +this.state.Situaciones
+                      );
  }
   cambioFechaDesde(e) {
       this.setState( {
@@ -92,31 +104,17 @@ class Consres extends Component {
         Sucursal:  e.target.value
       })
     }
+    cambioRubro(e) {
+      this.setState( {
+        Rubro:  e.target.value
+      })
+    }
+    cambioSituaciones(e) {
+      this.setState( {
+        Situaciones:  e.target.value
+      })
+    }
   };
 
 
-export default Consres;
-
-
-// function Consres() {
-//   return (
-//     <div className="Consres">
-//         <header className="Consres-header">
-//           <h1> Consultar recibos </h1>
-//         </header>
-//         <div className="Conres-body">
-//             <div className="Consres-OpcionesBuscar">
-//                   <table className="Conres-table">
-//                         <tr>
-//                             <td>  Desde  :  </td>
-//                             <td > <input id="date" type="date" /></td>
-//                             <td >  Hasta: </td>
-//                             <td > <input id="date" type="date" /></td>
-//                       </tr>
-//<input type="combobox" value={this.state.Sucursal} onChange={this.cambioSucursal} />
-//                   </table>
-//             </div>
-//         </div>
-//       </div>
-//     );
-// }
+export default VerPresupuestos;

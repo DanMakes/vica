@@ -8,7 +8,7 @@ function Botonnav() {
   return (
           <HashRouter>
               <div className="App-button">
-                    <Link to={"/Consres"}><button>Ingresar</button></Link>
+                    <Link to={"/Constrab"}><button>Ingresar</button></Link>
              </div>
          </HashRouter>
              );

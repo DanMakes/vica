@@ -2,15 +2,12 @@ import  React, {Component}  from 'react';
 import'./Estilos/Consres.css';
 import refresh from './Imagenes/refresh.png';
 
-import Recibos from './Recibos.js';
-import Items from './Itemres.js';
-///import money from './Imagenes/money.png';
-import Pago from './Pagosres.js';
-
-//Elementos del material-ui
+import Factura from "./Facturas.js";
+import Itemsfact from "./Itemsfact.js";
+import FormaPago from "./FormaPago.js"
 
 
-class Consres extends Component {
+class VerFacturas extends Component {
   constructor(props) {
     super(props);
     this.state = ({ FechaDesde: '' ,
@@ -26,7 +23,6 @@ class Consres extends Component {
   render() {
     return (
       <div className="Consres">
-
                <header className="Consres-header">
                  <h1> Consultar recibos </h1>
                </header>
@@ -34,6 +30,9 @@ class Consres extends Component {
                 <div className="Conres-body">
                       <form onSubmit={this.procesar}>
                         <table className="Conres-table">
+                          <tr>
+                              Buscar
+                          </tr>
                           <tr>
                                <td>  Desde:  </td>
                                <td > <input id="date" type="date" value={this.state.FechaDesde} onChange={this.cambioFechaDesde} /></td>
@@ -48,26 +47,28 @@ class Consres extends Component {
                       </form>
                         <table className="Consres-Recibos">
                         <tr>
-                            <td>Recibos</td>
+                            <td>Facturas</td>
                         </tr>
-                            <td>  <Recibos />  </td>
+                            <td><Factura /> </td>
                         </table>
 
                         <table className="Conres-table2">
                             <tr>
-                            <td align="Center"> Items del Recibo </td>
-                            <td align="center"> Pagos del Recibo </td>
+                            <td align="left">Items de la Factura </td>
+                            <td align="left"> Forma de Pago  </td>
                             </tr>
                               <tr>
-                              <td align="left"> <Items /></td>
-                              <td >  <Pago />  </td>
+                              <td align="left"> <Itemsfact /> </td>
+                              <td ><FormaPago /> </td>
                             </tr>
                         </table>
 
                   </div>
-      </div>
-    );
-  }
+                  </div>
+
+                );
+    }
+
 
   procesar(e) {
    e.preventDefault();
@@ -94,29 +95,4 @@ class Consres extends Component {
     }
   };
 
-
-export default Consres;
-
-
-// function Consres() {
-//   return (
-//     <div className="Consres">
-//         <header className="Consres-header">
-//           <h1> Consultar recibos </h1>
-//         </header>
-//         <div className="Conres-body">
-//             <div className="Consres-OpcionesBuscar">
-//                   <table className="Conres-table">
-//                         <tr>
-//                             <td>  Desde  :  </td>
-//                             <td > <input id="date" type="date" /></td>
-//                             <td >  Hasta: </td>
-//                             <td > <input id="date" type="date" /></td>
-//                       </tr>
-//<input type="combobox" value={this.state.Sucursal} onChange={this.cambioSucursal} />
-//                   </table>
-//             </div>
-//         </div>
-//       </div>
-//     );
-// }
+export default VerFacturas;

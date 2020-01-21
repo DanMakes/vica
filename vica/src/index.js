@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, HashRouter} from 'react-router-dom';
-import {hashHistory } from 'react-router';
-import Nav from './Nav.js';
-import  Botonnav from './Botonnav.js';
+import {  Route, HashRouter} from 'react-router-dom';
+///import Nav from './Nav.js';
+//import  Botonnav from './Botonnav.js';
 
 //Estilo
 import './App.css';
@@ -12,9 +11,12 @@ import './App.css';
 
 
 //Otros Sitios
-//import About from "./About.js"
+//import Recibos from "./Recibos.js"
 import App from "./Login.js"
 import Consres from "./Consres.js"
+import Constrab from "./Constrab.js"
+import VerFacturas from "./VerFacturas.js"
+import VerPresupuestos from "./VerPresupuestos.js"
 
 //Servicio
 import * as serviceWorker from './serviceWorker';
@@ -26,9 +28,12 @@ const App2 =  document.getElementById('root')
 ReactDOM.render(
 
               //  <Router hashHistory>
-                  <HashRouter>
+                <HashRouter>
                       <Route exact path='/' component={App}/>
                       <Route path='/Consres' component={Consres}/>
+                      <Route path='/Constrab' component={Constrab}/>
+                      <Route path='/VerFacturas' component={VerFacturas}/>
+                      <Route path='/VerPresupuestos' component={VerPresupuestos}/>
                 </HashRouter>
 
 
