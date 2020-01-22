@@ -24,7 +24,7 @@ class VerFacturas extends Component {
     return (
       <div className="Consres">
                <header className="Consres-header">
-                 <h1> Consultar recibos </h1>
+                 <h1> Facturas </h1>
                </header>
 
                 <div className="Conres-body">

@@ -3,9 +3,9 @@ import './App.css';
 import {Route, HashRouter } from "react-router-dom";
 
 
-import Consres from "./Consres.js";//pagina
-import Constrab from "./Constrab.js"
+
 import Botonnav from "./Botonnav.js"
+import MainMenu from "./MainMenu.js"
 
 
 class App extends Component {
@@ -30,7 +30,7 @@ class App extends Component {
                   <div>
                   <HashRouter>
                             <Botonnav />
-                            <Route path='/Constrab' component={Constrab}/>
+                            <Route path='/MainMenu' component={MainMenu}/>
                   </HashRouter>
                   </div>
                 </div>

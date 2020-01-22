@@ -17,6 +17,7 @@ import Consres from "./Consres.js"
 import Constrab from "./Constrab.js"
 import VerFacturas from "./VerFacturas.js"
 import VerPresupuestos from "./VerPresupuestos.js"
+import MainMenu from "./MainMenu.js"
 
 //Servicio
 import * as serviceWorker from './serviceWorker';
@@ -34,6 +35,7 @@ ReactDOM.render(
                       <Route path='/Constrab' component={Constrab}/>
                       <Route path='/VerFacturas' component={VerFacturas}/>
                       <Route path='/VerPresupuestos' component={VerPresupuestos}/>
+                      <Route path='/MainMenu' component={MainMenu}/>
                 </HashRouter>
 
 
