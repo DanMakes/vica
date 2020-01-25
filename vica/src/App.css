@@ -28,12 +28,41 @@
   }
 }
 
-.SlideLogin.App-body{
+.App-body{
 min-height: 100vh;
 background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #4286f4, #373B44);
 
 }
+
+.texto-medio{
+  position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-family: "Montserrat";
+	   text-align: center;
+	   color: #FFF;
+	   display: flex;
+	   flex-direction: column;
+	   align-items: center;
+	   justify-content: center;
+	   height: 100vh;
+	   letter-spacing: 1px;
+}
+
+h2 {
+	background-image: url("https://williamchyr.com/wp-content/uploads/2015/09/leaf-lerp-gif.gif");
+	background-size: cover;
+  color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+}
+
 
 .App-header {
   min-height: 30vh;

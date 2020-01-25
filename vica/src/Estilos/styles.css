@@ -1,6 +1,8 @@
 .MainMenu {
   font-family: sans-serif;
   text-align: center;
+
+
 }
 
 .rwt__tabs[data-rwt-vertical="true"] {
@@ -9,6 +11,7 @@
 
 .rwt__tablist:not([aria-orientation="vertical"]) {
   border-bottom: 1px solid #ddd;
+
 }
 
 .rwt__tablist[aria-orientation="vertical"] {
@@ -18,30 +21,40 @@
   flex-grow: 0;
   border-right: 1px solid #ddd;
   margin-right: 1rem;
+  background-color: blue;
+
+
 }
 
 .rwt__tab {
   background: transparent;
-  border: 0;
+  border: 2;
   font-family: inherit;
   font-size: inherit;
   padding: 1rem 2rem;
   transition: background 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  color: white;
+
 }
 
 .rwt__tab[aria-selected="false"]:hover,
 .rwt__tab:focus {
   outline: 0;
-  background-color: red;
+  background-color: #00FFFF;
+  color: black;
+
 }
 
 .rwt__tab[aria-selected="true"] {
   position: relative;
+  border: 3;
+  border-color: black;
 }
 
 .rwt__tab[aria-selected="true"]:after {
   content: "";
   position: absolute;
+  border-bottom: 1;
 }
 
 .rwt__tablist:not([aria-orientation="vertical"])
@@ -57,5 +70,5 @@
   right: -1px;
   top: 0;
   height: 100%;
-  border-right: 3px solid orange;
+  border-right: 3px solid black;
 }
