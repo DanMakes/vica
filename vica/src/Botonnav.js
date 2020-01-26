@@ -7,8 +7,8 @@ import './App.css';
 function Botonnav() {
   return (
           <HashRouter>
-              <div className="App-button">
-                    <Link to={"/MainMenu"}><button>Ingresar</button></Link>
+              <div className="Container-App-button">
+                    <Link to={"/MainMenu"}><button className="Boton-Login">Ingresar</button></Link>
              </div>
          </HashRouter>
              );

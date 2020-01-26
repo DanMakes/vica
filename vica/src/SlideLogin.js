@@ -6,6 +6,9 @@ import MainMenu from "./MainMenu.js"
 import { Carousel } from "react-responsive-carousel";
 
 
+//import loginVica from "./Estilos/login_vica.jpg";
+
+import loginVica from "./login_vica.jpg";
 
 import vicaneum from './Imagenes/vicaneum2.jpg';
   //
@@ -19,29 +22,40 @@ class SlideLogin extends Component {
 
                     <img src={vicaneum} alt="vicaneum" />
                     <div className="texto-medio">
-                    <h2> Bienvenidos </h2>
+                    <button className="comenzar"> Comenzar </button>
                     </div>
                     </div>
                     <div>
-                              <header className="App-header">
-                                <h1> Inicio de sesion </h1>
-                              </header>
-                              <table className="App-table">
-                                <tr>
-                                    <td>  <label className= "App-labels">Usuario: </label></td>
-                                    <td>  <input  className="App-inputs"  type="text" name="Usuario" /></td>
-                                </tr>
-                                <tr>
-                                      <td>  <label className= "App-labels">Contraseña:   </label></td>
-                                      <td>  <input className="App-inputs" type="password" name="password" /></td>
-                                </tr>
-                              </table>
-                              <br></br>
 
-                              <HashRouter>
-                                        <Botonnav />
-                                        <Route path='/MainMenu' component={MainMenu}/>
-                              </HashRouter>
+
+
+                            <div className="limite">
+                              <div className="container-login">
+
+                                    <div className="App-login">
+                                          <form class="login-form validate-form">
+                                          <span class="login-form-logo">
+
+                                          </span>
+
+                                          <span class="login-form-title p-b-34 p-t-27">
+                                            Iniciar Sesion
+                                          </span>
+                                          <div className="form-input">
+                                                 <input  className="App-inputs"  type="text" name="Usuario" placeholder="Usuario" />
+                                                 	<span className="focus-input" data-placeholder="&#xf207;"></span>
+                                                  <input className="App-inputs" type="password" name="password" placeholder="Password" />
+                                                 <span className="focus-input" data-placeholder="&#xf191;"></span>
+                                           </div>
+                                           <HashRouter>
+                                                     <Botonnav />
+                                                     <Route path='/MainMenu' component={MainMenu}/>
+                                           </HashRouter>
+
+                                         </form>
+                                    </div>
+                              </div>
+                            </div>
 
                     </div>
                 </Carousel>
