@@ -1,6 +1,6 @@
 import  React, {Component}  from 'react';
 import'./Estilos/Consres.css';
-import refresh from './Imagenes/refresh.png';
+
 
 import Trabajos from './Trabajos.js';
 import DetalleTrabajo from './DetalleTrabajo.js';

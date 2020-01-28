@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Route, HashRouter } from "react-router-dom";
+import {Route, HashRouter, Link } from "react-router-dom";
 import Botonnav from "./Botonnav.js"
 import MainMenu from "./MainMenu.js"
 import { Carousel } from "react-responsive-carousel";
@@ -19,25 +19,21 @@ class SlideLogin extends Component {
 <div className="SlideLogin">
               <Carousel autoPlay >
                     <div className="App-body">
+                               <img src={vicaneum} alt="vicaneum" />
+                          <div className="texto-medio">
 
-                    <img src={vicaneum} alt="vicaneum" />
-                    <div className="texto-medio">
-                    <button className="comenzar"> Comenzar </button>
+
+                               <Link to="#container-login"> <button className="comenzar" > Comenzar </button></Link>
+
+                          </div>
                     </div>
-                    </div>
-                    <div>
-
-
-
-                            <div className="limite">
-                              <div className="container-login">
-
-                                    <div className="App-login">
+                     <div>
+                        <div className="limite">
+                              <div className="container-login" id="container-login">
+                                    <div className="App-login" id="App-login" >
                                           <form class="login-form validate-form">
                                           <span class="login-form-logo">
-
                                           </span>
-
                                           <span class="login-form-title p-b-34 p-t-27">
                                             Iniciar Sesion
                                           </span>
@@ -53,6 +49,7 @@ class SlideLogin extends Component {
                                            </HashRouter>
 
                                          </form>
+
                                     </div>
                               </div>
                             </div>

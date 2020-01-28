@@ -9,29 +9,39 @@ import Constrab from "./Constrab.js"
 import VerFacturas from "./VerFacturas.js"
 import VerPresupuestos from "./VerPresupuestos.js"
 
+//Iconos
+import IconoRecibo from "./Imagenes/IconoRecibo.png";
+import IconoFactura from "./Imagenes/IconoFactura.png"
+import IconoPresupuesto from "./Imagenes/IconoPresupuesto.png"
+import IconoOT from "./Imagenes/IconoOT.png"
+
+
 class MainMenu extends Component {
   render() {
     return (
-      <Tabs defaultTab="vertical-tab-one" vertical>
-        <TabList>
-          <Tab tabFor="vertical-tab-one">Consultar Recibos</Tab>
-          <Tab tabFor="vertical-tab-two">Consultar Ordenes de Trabajo</Tab>
-          <Tab tabFor="vertical-tab-three">Facturas</Tab>
-            <Tab tabFor="vertical-tab-four">Presupuestos</Tab>
-        </TabList>
-        <TabPanel tabId="vertical-tab-one">
-          <Consres />
-        </TabPanel>
-        <TabPanel tabId="vertical-tab-two">
-          <Constrab />
-        </TabPanel>
-        <TabPanel tabId="vertical-tab-three">
-          <VerFacturas />
-        </TabPanel>
-        <TabPanel tabId="vertical-tab-four">
-          <VerPresupuestos />
-        </TabPanel>
-      </Tabs>
+
+      <div className="container-tab">
+              <Tabs defaultTab="vertical-tab-one" vertical>
+              <TabList>
+                <Tab tabFor="vertical-tab-one"><img src={IconoRecibo} alt="recibo" align="left" />Consultar Recibos</Tab>
+                <Tab tabFor="vertical-tab-two"><img src={IconoOT} alt="orden de trabajo" align="left" />Ordenes de Trabajo</Tab>
+                <Tab tabFor="vertical-tab-three"><img src={IconoFactura} alt="factura" align="left" />Facturas</Tab>
+                  <Tab tabFor="vertical-tab-four"><img src={IconoPresupuesto} alt="presupuesto" align="left" />Presupuestos</Tab>
+              </TabList>
+              <TabPanel tabId="vertical-tab-one">
+                <Consres />
+              </TabPanel>
+              <TabPanel tabId="vertical-tab-two">
+                <Constrab />
+              </TabPanel>
+              <TabPanel tabId="vertical-tab-three">
+                <VerFacturas />
+              </TabPanel>
+              <TabPanel tabId="vertical-tab-four">
+                <VerPresupuestos />
+              </TabPanel>
+            </Tabs>
+        </div>
       )
   }
 }

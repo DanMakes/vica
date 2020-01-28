@@ -1,16 +1,25 @@
 .MainMenu {
   font-family: sans-serif;
   text-align: center;
+}
+
+.container-tab{
+  width: 200px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  background: #47a3da;
 
 
 }
-
 .rwt__tabs[data-rwt-vertical="true"] {
   display: flex;
+
 }
 
 .rwt__tablist:not([aria-orientation="vertical"]) {
   border-bottom: 1px solid #ddd;
+
 
 }
 
@@ -21,7 +30,6 @@
   flex-grow: 0;
   border-right: 1px solid #ddd;
   margin-right: 1rem;
-  background-color: blue;
 
 
 }
@@ -31,24 +39,25 @@
   border: 2;
   font-family: inherit;
   font-size: inherit;
-  padding: 1rem 2rem;
+  padding: 1em;
   transition: background 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
   color: white;
-
+  border-bottom: 1px solid #258ecd;
 }
 
 .rwt__tab[aria-selected="false"]:hover,
 .rwt__tab:focus {
   outline: 0;
-  background-color: #00FFFF;
+  background: #258ecd;
   color: black;
 
 }
 
 .rwt__tab[aria-selected="true"] {
   position: relative;
-  border: 3;
-  border-color: black;
+  border: 2;
+  border-color: white;
+  background-color:#258ecd;
 }
 
 .rwt__tab[aria-selected="true"]:after {
@@ -70,5 +79,6 @@
   right: -1px;
   top: 0;
   height: 100%;
-  border-right: 3px solid black;
+  border: 3px solid black;
+
 }

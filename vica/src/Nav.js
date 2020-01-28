@@ -7,8 +7,8 @@ return  (
             <div className="container">
               <div className="navbar-header">
                   <ul className="nav navbar-nav">
-                      <li><Link to={"/Login"}>Login</Link></li>
-                      <li><Link to={"/Consres"}>Consultar Recibo</Link></li>
+                      <li><Link to={"/"}>Home</Link></li>
+                    
                  </ul>
                </div>
               </div>

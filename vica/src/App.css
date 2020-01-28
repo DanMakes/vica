@@ -23,6 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
   .limite{
@@ -38,12 +39,9 @@
 
 .App-body{
 min-height: 100vh;
-
-
 }
 
 .Boton-Login{
-
   font-family: Poppins-Medium;
   font-size: 16px;
   color: #555555;
@@ -69,6 +67,7 @@ min-height: 100vh;
   transition: all 0.4s;
   color: white;
   margin-left: 130px;
+
 }
 
 
@@ -93,14 +92,11 @@ min-height: 100vh;
 	   align-items: center;
 	   justify-content: center;
 	   height: 100vh;
-
 }
 
 .comenzar
 {
-  bakground: #373B44;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4286f4, #373B44);
+  background: #47a3da;
 	display:inline-block;
 	font-size:1.25em;
 	margin:20px;
@@ -114,15 +110,19 @@ min-height: 100vh;
    border: 1px solid #000000;
    color: white;
 }
+.comenzar:hover {
+	cursor: pointer;
+  background-color: white;
+  color: black;
+
+}
 
 
 .App-inputs{
-
   font-family: Poppins-Regular;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
-
   display: block;
   width: 100%;
   height: 45px;
@@ -138,13 +138,10 @@ min-height: 100vh;
   border-radius: 10px;
   overflow: hidden;
   padding: 55px 55px 177px 55px;
-  bakground: #373B44;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4286f4, #373B44);
+  background: #47a3da;
 }
 
 .limite{
-
   width: 100%;
   margin: 0 auto;
 }
@@ -153,8 +150,7 @@ button:hover {
 	cursor: pointer;
   background-color: white;
   color: black;
-}
-
+  }
 
 .container-login{
   width: 100%;

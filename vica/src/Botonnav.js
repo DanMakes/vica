@@ -1,6 +1,4 @@
 import React from 'react';
-
-
 import {Link, HashRouter} from 'react-router-dom';
 import './App.css';
 //NOTA: ACORDARSE < a href= LINK en react
