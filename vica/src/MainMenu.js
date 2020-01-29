@@ -8,7 +8,7 @@ import Consres from "./Consres.js"
 import Constrab from "./Constrab.js"
 import VerFacturas from "./VerFacturas.js"
 import VerPresupuestos from "./VerPresupuestos.js"
-
+import Encabezado from "./Encabezado.js";
 //Iconos
 import IconoRecibo from "./Imagenes/IconoRecibo.png";
 import IconoFactura from "./Imagenes/IconoFactura.png"
@@ -16,13 +16,15 @@ import IconoPresupuesto from "./Imagenes/IconoPresupuesto.png"
 import IconoOT from "./Imagenes/IconoOT.png"
 
 
+
+
 class MainMenu extends Component {
   render() {
     return (
-
-      <div className="container-tab">
-              <Tabs defaultTab="vertical-tab-one" vertical>
-              <TabList>
+          <div className="MainMenu">
+          <Encabezado />
+            <Tabs defaultTab="vertical-tab-one" vertical>
+            <TabList>
                 <Tab tabFor="vertical-tab-one"><img src={IconoRecibo} alt="recibo" align="left" />Consultar Recibos</Tab>
                 <Tab tabFor="vertical-tab-two"><img src={IconoOT} alt="orden de trabajo" align="left" />Ordenes de Trabajo</Tab>
                 <Tab tabFor="vertical-tab-three"><img src={IconoFactura} alt="factura" align="left" />Facturas</Tab>
@@ -41,7 +43,8 @@ class MainMenu extends Component {
                 <VerPresupuestos />
               </TabPanel>
             </Tabs>
-        </div>
+          </div>
+
       )
   }
 }

@@ -7,11 +7,11 @@ import { Carousel } from "react-responsive-carousel";
 
 
 //import loginVica from "./Estilos/login_vica.jpg";
-
 import loginVica from "./login_vica.jpg";
-
 import vicaneum from './Imagenes/vicaneum2.jpg';
-  //
+// IconoF
+
+
 
 class SlideLogin extends Component {
     render() {
@@ -23,7 +23,7 @@ class SlideLogin extends Component {
                           <div className="texto-medio">
 
 
-                               <Link to="#container-login"> <button className="comenzar" > Comenzar </button></Link>
+                          
 
                           </div>
                     </div>

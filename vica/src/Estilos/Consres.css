@@ -1,7 +1,8 @@
 .Consres
 {
 color: white;
-
+background: #258ecd;
+width: 1100px;
 }
 
 .Consres-header{
@@ -13,15 +14,13 @@ color: black;
 {
   text-align: left;
   background: #258ecd;
-  min-height: 100vh;
-
-
-}
+  height: 700px;
+  }
 
 .Conres-table
 {
   color:white;
-  margin-left: 5vh;
+  margin-left: 1vh;
   margin-bottom: 10vh;
   border-collapse: separate;
   border-spacing: 10px 15px ;
@@ -39,7 +38,6 @@ color: black;
   background-position: 3px;
 }
 
-
 .Conres-table2
 {
   color:white;
@@ -48,5 +46,47 @@ color: black;
   border-spacing: 10px 15px;
   border: solid 3px;
   border-color: white;
+}
 
+.LogoHeader{
+padding: 14px 50px 75px ;
+border:outset;
+padding:1% 1em;
+background-color: white;
+height: 70px;
+min-width: 400px;
+width: 1320px;
+}
+
+
+.ImagenLogo{
+width:300px;
+}
+
+.IconoHome
+{
+  width:40px;
+
+
+}
+
+.IconosAtras
+{
+  width:40px;
+    margin-left: 850px;
+
+
+}
+
+
+
+@media all and (max-width: 800px) {
+    LogoHeader {
+      padding: 14px 50px 75px ;
+      border:outset;
+      padding:1% 1em;
+      background-color: white;
+      height: 70px;
+      min-width: 400px;
+    }
 }
