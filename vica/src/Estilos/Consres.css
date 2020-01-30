@@ -27,8 +27,6 @@ color: black;
   border-spacing: 10px 15px ;
   border: solid 3px;
   border-color: white;
-
-
 }
 
 .Consres-moneda{
@@ -74,9 +72,7 @@ width:300px;
 .IconosAtras
 {
   width:40px;
-    margin-left: 850px;
-
-
+  margin-left: 850px;
 }
 
 
@@ -90,4 +86,43 @@ width:300px;
       height: 70px;
       min-width: 400px;
     }
+}
+
+.Container-PiePagina{
+background-color: Grey;
+width: 1340px;
+height: 180px;
+display: inline-flex;
+}
+
+.Container-logo{
+width: 30px;
+margin-top: 30px;
+
+}
+
+.Logo-PiePagina{
+border-radius: 40%;
+width: 150px;
+margin-top: 30px;
+display: inline-block;
+}
+
+.PiePagina{
+font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+font-style: normal;
+font-weight: bold;
+color: white;
+font-size: 12px;
+display: inline-block;
+width: 550px;
+margin-right: 330px;
+margin-left: 200px;
+}
+
+
+.Container-Redes  {
+margin-top: 40px;
+display: inline-block;
+
 }

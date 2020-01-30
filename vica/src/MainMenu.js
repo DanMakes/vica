@@ -9,6 +9,8 @@ import Constrab from "./Constrab.js"
 import VerFacturas from "./VerFacturas.js"
 import VerPresupuestos from "./VerPresupuestos.js"
 import Encabezado from "./Encabezado.js";
+import PiePagina from "./PiePagina.js"
+
 //Iconos
 import IconoRecibo from "./Imagenes/IconoRecibo.png";
 import IconoFactura from "./Imagenes/IconoFactura.png"
@@ -43,6 +45,7 @@ class MainMenu extends Component {
                 <VerPresupuestos />
               </TabPanel>
             </Tabs>
+            <PiePagina />
           </div>
 
       )

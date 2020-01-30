@@ -3,14 +3,14 @@ import React, {Component} from 'react';
 import "./Estilos/CarouselPrueba.css"
 
 import SlideLogin from "./SlideLogin.js";
-import Encabezado from "./Encabezado.js";
+
 
 class App extends Component {
     render() {
     return (
 
       <SlideLogin />
-          
+
 
     );
    }

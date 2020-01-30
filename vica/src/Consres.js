@@ -6,7 +6,7 @@ import Recibos from './Recibos.js';
 import Items from './Itemres.js';
 ///import money from './Imagenes/money.png';
 import Pago from './Pagosres.js';
-import  Encabezado from "./Encabezado.js";
+
 
 //Elementos del material-ui
 
@@ -34,7 +34,6 @@ class Consres extends Component {
           <h1>Consulta recibo</h1>
       </header>
                 <div className="Conres-body">
-
                       <form onSubmit={this.procesar}>
                         <table className="Conres-table">
                           <tr>
