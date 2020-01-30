@@ -1,8 +1,8 @@
 .Consres
 {
-color: white;
-background: #258ecd;
-width: 1100px;
+color: black;
+background-color: white;
+
 }
 
 .Consres-header{
@@ -13,14 +13,14 @@ color: black;
 .Conres-body
 {
   text-align: left;
-  background: #258ecd;
-  height: 700px;
-  width: 100px;
+  background: #F4F6F8;
+  height: 707px;
+  width: 1098px;
   }
 
 .Conres-table
 {
-  color:white;
+  color:black;
   margin-left: 1vh;
   margin-bottom: 10vh;
   border-collapse: separate;
@@ -39,7 +39,7 @@ color: black;
 
 .Conres-table2
 {
-  color:white;
+  color:black;
   margin-bottom: 100px ;
   border-collapse: separate;
   border-spacing: 10px 15px;
@@ -89,10 +89,12 @@ width:300px;
 }
 
 .Container-PiePagina{
-background-color: Grey;
-width: 1340px;
+background-color:#9c9c9c;
+width: 1300px;
 height: 180px;
 display: inline-flex;
+margin-right: 8px;
+margin-top:6px;
 }
 
 .Container-logo{

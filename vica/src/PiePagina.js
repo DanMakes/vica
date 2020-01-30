@@ -18,8 +18,8 @@ class PiePagina extends Component {
                   <p>Ruta 12 y A. Mazza Km.1031 Tel 4-451030 Fax: 4-456082</p>
               </div>
               <div className="Container-Redes" align="right">
-                    <input align="right" type="image" alt="facebook-vica" src={LogoFb} />
-                    <input  align="right" type="image" alt="twitter-vica" src={LogoTw} />
+                    <a title= "Ir a Fb" target="_blank" href="https://www.facebook.com/vicaneumaticossa"><input align="right" type="image" alt="facebook-vica" src={LogoFb} /></a>
+                    <input title="4-467734"  align="right" type="image" alt="Telefono-vica" src={LogoTw} />
               </div>
         </div>
     );

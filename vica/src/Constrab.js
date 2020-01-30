@@ -16,9 +16,7 @@ class Constrab extends Component {
     return (
       <div className="Consres">
 
-               <header className="Consres-header">
-                 <h1> Consulta de Trabajos </h1>
-               </header>
+              
 
                 <div className="Conres-body">
                         <table className="Consres-Recibos">

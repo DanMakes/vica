@@ -23,9 +23,7 @@ class VerFacturas extends Component {
   render() {
     return (
       <div className="Consres">
-               <header className="Consres-header">
-                 <h1> Facturas </h1>
-               </header>
+
 
                 <div className="Conres-body">
                       <form onSubmit={this.procesar}>
@@ -40,7 +38,7 @@ class VerFacturas extends Component {
                                <td > <input id="date" type="date" value={this.state.FechaHasta} onChange={this.cambioFechaHasta} /></td>
                                <td>Sucursal:</td>
                                <td><select name="Seleccione"><option value="">(TODAS)</option></select></td>
-                               <td><input type="Image" src={refresh} className="Consres-logo" alt="refresh"  height="20" width="20" /></td>
+                               <td><input type="Image" src={refresh} className="Consres-logo" alt="refresh"  height="25" width="25" /></td>
                                <td><input className="Consres-moneda" type="submit" value="Agregar"  /></td>
                            </tr>
                         </table>

@@ -32,26 +32,30 @@ import Detalle from "./DetallePres.js"
     return (
       <div className="Consres">
 
-               <header className="Consres-header">
-                 <h1> Presupuestos </h1>
-               </header>
 
                 <div className="Conres-body">
                       <form onSubmit={this.procesar}>
                         <table className="Conres-table">
                           <tr>
                                <td>  Desde:  </td>
-                               <td > <input id="date" type="date" value={this.state.FechaDesde} onChange={this.cambioFechaDesde} /></td>
                                <td >  Hasta: </td>
-                               <td > <input id="date" type="date" value={this.state.FechaHasta} onChange={this.cambioFechaHasta} /></td>
                                <td>Sucursal:</td>
-                               <td><select name="Seleccione"><option value="">(TODAS)</option></select></td>
                                <td>Rubro:</td>
+                               <td>Situaciones: </td>
+                               <td>Sin OT:</td>
+                          </tr>
+                          <tr>
+                               <td > <input id="date" type="date" value={this.state.FechaDesde} onChange={this.cambioFechaDesde} /></td>
+
+                               <td > <input id="date" type="date" value={this.state.FechaHasta} onChange={this.cambioFechaHasta} /></td>
+
+                               <td><select name="Seleccione"><option value="">(TODAS)</option></select></td>
+
                                <td><select name="Seleccione"><option value="">(TODOS)</option></select></td>
                                <td><select name="Situaciones"><option value="">Situaciones</option></select></td>
-                               <td>Sin OT:</td>
+
                                <td><select name="Seleccione"><option value="">(AMBOS)</option></select></td>
-                               <td><input type="Image" src={refresh} className="Consres-logo" alt="refresh"  height="20" width="20" /></td>
+                               <td><input type="Image" title="Actualizar" src={refresh} className="Consres-logo" alt="refresh"  height="25" width="25" /></td>
                                <td><input className="Consres-moneda" type="submit" value="Agregar"  /></td>
                            </tr>
                         </table>
