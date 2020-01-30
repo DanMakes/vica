@@ -8,7 +8,6 @@ return  (
               <div className="navbar-header">
                   <ul className="nav navbar-nav">
                       <li><Link to={"/"}>Home</Link></li>
-                    
                  </ul>
                </div>
               </div>
