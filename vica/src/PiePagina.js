@@ -1,8 +1,8 @@
 import  React, {Component}  from 'react';
 
-import LogoVica from "./Imagenes/vicaneum2.jpg";
+import LogoVica from "./Imagenes/LogoPie.jpg";
 import LogoFb from "./Imagenes/IconoFace.png";
-import LogoTw from "./Imagenes/IconoTw.png";
+import LogoTel from "./Imagenes/IconoTw.png";
 
 
 class PiePagina extends Component {
@@ -18,8 +18,8 @@ class PiePagina extends Component {
                   <p>Ruta 12 y A. Mazza Km.1031 Tel 4-451030 Fax: 4-456082</p>
               </div>
               <div className="Container-Redes" align="right">
-                    <a title= "Ir a Fb" target="_blank" href="https://www.facebook.com/vicaneumaticossa"><input align="right" type="image" alt="facebook-vica" src={LogoFb} /></a>
-                    <input title="4-467734"  align="right" type="image" alt="Telefono-vica" src={LogoTw} />
+                    <a title= "Ir a Fb" target="_blank" href="https://www.facebook.com/vicaneumaticossa"><input align="left" type="image" alt="facebook-vica" src={LogoFb} /></a>
+                    <input title="3794-467734"  align="left" type="image" alt="Telefono-vica" src={LogoTel} />
               </div>
         </div>
     );

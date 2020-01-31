@@ -8,7 +8,7 @@ import Items from './Itemres.js';
 import Pago from './Pagosres.js';
 
 
-//Elementos del material-ui
+
 
 
 class Consres extends Component {
