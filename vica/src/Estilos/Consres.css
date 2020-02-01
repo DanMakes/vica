@@ -2,6 +2,7 @@
 {
 color: black;
 background-color: white;
+font-family: "Roboto", Verdana,sans-serif;
 
 }
 
@@ -16,7 +17,7 @@ color: black;
   background: #8e9eab;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  font-family: "Roboto", Verdana,sans-serif;
   height: 707px;
   width: 1098px;
   }
@@ -30,6 +31,7 @@ color: black;
   border-spacing: 10px 15px ;
   border: solid 3px;
   border-color: white;
+
 }
 
 .Consres-moneda{
@@ -72,7 +74,7 @@ width:300px;
 .IconosAtras
 {
   width:40px;
-  margin-left: 850px;
+  margin-left: 400px;
 }
 
 @media all and (max-width: 800px) {
@@ -111,7 +113,7 @@ display: inline-block;
 }
 
 .PiePagina{
-font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+font-family: "Roboto", Verdana,sans-serif;
 font-style: normal;
 font-weight: bold;
 color: white;
@@ -126,5 +128,33 @@ margin-left: 200px;
 .Container-Redes  {
 margin-top: 40px;
 display: inline-block;
+}
+
+
+
+.ImagenHeader{
+width:300px;
+margin-left: 405px;
+display: inline-flex;
+
+}
+
+.NavegationHeader
+{
+  height: 50px;
+  display: inline-flex;
+
+}
+
+
+.TextoMenu{
+font-family: "Roboto", Verdana,sans-serif;
+font-style:normal;
+font-weight: bold;
+font-size: 20px;
+}
+
+.list{
+margin-right: 16px;
 
 }

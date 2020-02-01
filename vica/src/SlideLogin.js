@@ -21,9 +21,7 @@ class SlideLogin extends Component {
                     <div className="App-body">
                                <img src={vicaneum} alt="vicaneum" />
                           <div className="texto-medio">
-
-
-                          
+                    
 
                           </div>
                     </div>
