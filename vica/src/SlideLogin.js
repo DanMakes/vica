@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Route, HashRouter, Link } from "react-router-dom";
+import {Route, HashRouter } from "react-router-dom";
 import Botonnav from "./Botonnav.js"
 import MainMenu from "./MainMenu.js"
 import { Carousel } from "react-responsive-carousel";
 
 
 //import loginVica from "./Estilos/login_vica.jpg";
-import loginVica from "./login_vica.jpg";
+
 import vicaneum from './Imagenes/vicaneum2.jpg';
 // IconoF
 
@@ -21,7 +21,7 @@ class SlideLogin extends Component {
                     <div className="App-body">
                                <img src={vicaneum} alt="vicaneum" />
                           <div className="texto-medio">
-                    
+
 
                           </div>
                     </div>

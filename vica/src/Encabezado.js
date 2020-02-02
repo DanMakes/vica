@@ -1,5 +1,5 @@
 import  React, {Component}  from 'react';
-import {Link, HashRouter} from 'react-router-dom';
+
 
 
 //import LogoVica from "./Imagenes/vicaHeader - copia.png";
