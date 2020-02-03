@@ -16,6 +16,7 @@ const useStyles = makeStyles({
     border: 4,
     marginBottom: 250,
 
+
   },
 });
 const StyledTableCell = withStyles(theme => ({
@@ -33,6 +34,7 @@ const StyledTableCell = withStyles(theme => ({
 export default function Recibos() {
   const classes = useStyles();
   return (
+    <div className="Recibo">
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
@@ -49,6 +51,7 @@ export default function Recibos() {
         </TableHead>
         </Table>
       </TableContainer>
+      </div>
     );
   }
 

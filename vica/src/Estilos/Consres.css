@@ -29,7 +29,6 @@ color: black;
   margin-bottom: 10vh;
   border-collapse: separate;
   border-spacing: 10px 15px ;
-  border: solid 3px;
   border-color: white;
 
 }
@@ -48,8 +47,36 @@ color: black;
   margin-bottom: 100px ;
   border-collapse: separate;
   border-spacing: 10px 15px;
-  border: solid 3px;
   border-color: white;
+  margin-left: 5px;
+}
+
+.Trabajos
+{
+ margin-left: 20px;
+ margin-top: 20px;
+}
+
+.DetallesTrabajo
+{
+margin-left: 20px;
+margin-top: 70px;
+}
+
+.Facturas
+{
+ margin-left: 20px;
+}
+
+.Items
+{
+margin-left: 6px;
+margin-top: 60px;
+}
+
+.FormaPago
+{
+  margin-top: 60px;
 }
 
 .LogoHeader{
@@ -102,6 +129,12 @@ margin-top:6px;
 .Container-logo{
 width: 30px;
 margin-top: 30px;
+
+}
+
+.Recibo
+{
+  margin-left: 15px;
 
 }
 

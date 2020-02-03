@@ -36,16 +36,19 @@ const StyledTableCell = withStyles(theme => ({
 export default function Itemsfact() {
   const classes = useStyles();
   return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <StyledTableCell>#</StyledTableCell>
-            <StyledTableCell>Codigo</StyledTableCell>
-            <StyledTableCell align="left">Descripcion</StyledTableCell>
-          </TableRow>
-        </TableHead>
-        </Table>
-      </TableContainer>
+    <div className="Items">
+       <h6 align="center">Items de Factura</h6>
+          <TableContainer component={Paper}>
+            <Table className={classes.table} aria-label="simple table">
+              <TableHead>
+                <TableRow>
+                  <StyledTableCell>#</StyledTableCell>
+                  <StyledTableCell>Codigo</StyledTableCell>
+                  <StyledTableCell align="left">Descripcion</StyledTableCell>
+                </TableRow>
+              </TableHead>
+              </Table>
+            </TableContainer>
+    </div>
     );
   }

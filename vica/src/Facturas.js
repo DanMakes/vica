@@ -12,7 +12,7 @@ import Paper from '@material-ui/core/Paper';
 const useStyles = makeStyles({
   table: {
     maxheight: 200,
-    width: 900,
+    width: 1073,
     border: 4,
     marginBottom: 100,
 
@@ -32,21 +32,24 @@ const StyledTableCell = withStyles(theme => ({
 export default function Facturas() {
   const classes = useStyles();
   return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <StyledTableCell>Fecha</StyledTableCell>
-            <StyledTableCell align="right">Numero</StyledTableCell>
-            <StyledTableCell align="right">Total</StyledTableCell>
-            <StyledTableCell align="right">Vendedor</StyledTableCell>
-            <StyledTableCell align="right">Sucursal</StyledTableCell>
-            <StyledTableCell align="right">Observacion</StyledTableCell>
-            <StyledTableCell align="right">O.E</StyledTableCell>
-            <StyledTableCell align="right">C.A.E</StyledTableCell>
-          </TableRow>
-        </TableHead>
-        </Table>
-      </TableContainer>
+    <div className="Facturas">
+      <h6 align="center"> Facturas </h6>
+        <TableContainer component={Paper}>
+          <Table className={classes.table} aria-label="simple table">
+            <TableHead>
+              <TableRow>
+                <StyledTableCell>Fecha</StyledTableCell>
+                <StyledTableCell align="right">Numero</StyledTableCell>
+                <StyledTableCell align="right">Total</StyledTableCell>
+                <StyledTableCell align="right">Vendedor</StyledTableCell>
+                <StyledTableCell align="right">Sucursal</StyledTableCell>
+                <StyledTableCell align="right">Observacion</StyledTableCell>
+                <StyledTableCell align="right">O.E</StyledTableCell>
+                <StyledTableCell align="right">C.A.E</StyledTableCell>
+              </TableRow>
+            </TableHead>
+            </Table>
+          </TableContainer>
+    </div>
     );
   }

@@ -16,18 +16,12 @@ class Constrab extends Component {
     return (
       <div className="Consres">
 
-              
+
 
                 <div className="Conres-body">
                         <table className="Consres-Recibos">
                         <tr>
-                            <td>Consulta de Trabajos</td>
-                        </tr>
-                        <tr>
                             <td><Trabajos />   </td>
-                        </tr>
-                        <tr>
-                            <td>Detalle de la orden</td>
                         </tr>
                         <tr>
                             <td><DetalleTrabajo />   </td>

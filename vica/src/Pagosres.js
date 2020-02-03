@@ -12,7 +12,7 @@ import Paper from '@material-ui/core/Paper';
 const useStyles = makeStyles({
   table: {
     maxheight: 200,
-    width: 500,
+    width: 510,
     border: 4,
     marginBottom: 100,
 

@@ -8,9 +8,6 @@ import Items from './Itemres.js';
 import Pago from './Pagosres.js';
 
 
-
-
-
 class Consres extends Component {
   constructor(props) {
     super(props);
@@ -30,9 +27,7 @@ class Consres extends Component {
 
       <div className="Consres">
 
-      <header className ="App-header">
 
-      </header>
                 <div className="Conres-body">
                       <form onSubmit={this.procesar}>
                         <table className="Conres-table">
@@ -50,19 +45,19 @@ class Consres extends Component {
                       </form>
                         <table className="Consres-Recibos">
                         <tr>
-                            <td>Recibos</td>
+                            <td align="center">Recibos</td>
                         </tr>
                             <td>  <Recibos />  </td>
                         </table>
 
                         <table className="Conres-table2">
                             <tr>
-                            <td align="Center"> Items del Recibo </td>
+                            <td align="center"> Items del Recibo </td>
                             <td align="center"> Pagos del Recibo </td>
                             </tr>
                               <tr>
                               <td align="left"> <Items /></td>
-                              <td >  <Pago />  </td>
+                              <td>  <Pago />  </td>
                             </tr>
                         </table>
 

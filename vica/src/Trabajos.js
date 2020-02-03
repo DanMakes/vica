@@ -32,22 +32,25 @@ const StyledTableCell = withStyles(theme => ({
 export default function Trabajos() {
   const classes = useStyles();
   return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <StyledTableCell>Estado</StyledTableCell>
-            <StyledTableCell align="right">Fecha</StyledTableCell>
-            <StyledTableCell align="right">Compromiso</StyledTableCell>
-            <StyledTableCell align="right">Numero</StyledTableCell>
-            <StyledTableCell align="right">Sucursal</StyledTableCell>
-            <StyledTableCell align="right">Vehiculo</StyledTableCell>
-            <StyledTableCell align="right">Total</StyledTableCell>
-            <StyledTableCell align="right">Factura</StyledTableCell>
-            <StyledTableCell align="right">Obsevacion</StyledTableCell>
-          </TableRow>
-        </TableHead>
-        </Table>
-      </TableContainer>
+    <div className="Trabajos">
+    <h6 align="center">Consulta de Trabajos</h6>
+      <TableContainer component={Paper}>
+        <Table className={classes.table} aria-label="simple table">
+         <TableHead>
+            <TableRow>
+              <StyledTableCell>Estado</StyledTableCell>
+              <StyledTableCell align="right">Fecha</StyledTableCell>
+              <StyledTableCell align="right">Compromiso</StyledTableCell>
+              <StyledTableCell align="right">Numero</StyledTableCell>
+              <StyledTableCell align="right">Sucursal</StyledTableCell>
+              <StyledTableCell align="right">Vehiculo</StyledTableCell>
+              <StyledTableCell align="right">Total</StyledTableCell>
+              <StyledTableCell align="right">Factura</StyledTableCell>
+              <StyledTableCell align="right">Obsevacion</StyledTableCell>
+            </TableRow>
+          </TableHead>
+          </Table>
+        </TableContainer>
+      </div>
     );
   }

@@ -17,14 +17,10 @@ class SlideLogin extends Component {
     render() {
     return (
 <div className="SlideLogin">
-              <Carousel autoPlay >
+
                     <div className="App-body">
-                               <img src={vicaneum} alt="vicaneum" />
-                          <div className="texto-medio">
 
 
-                          </div>
-                    </div>
                      <div>
                         <div className="limite">
                               <div className="container-login" id="container-login">
@@ -53,7 +49,7 @@ class SlideLogin extends Component {
                             </div>
 
                     </div>
-                </Carousel>
+  </div>
 </div>
 );
 }

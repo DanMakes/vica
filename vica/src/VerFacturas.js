@@ -44,20 +44,14 @@ class VerFacturas extends Component {
                         </table>
                       </form>
                         <table className="Consres-Recibos">
-                        <tr>
-                            <td>Facturas</td>
-                        </tr>
-                            <td><Factura /> </td>
+                                <tr>
+                                    <td><Factura /> </td>
+                                </tr>
                         </table>
-
                         <table className="Conres-table2">
                             <tr>
-                            <td align="left">Items de la Factura </td>
-                            <td align="left"> Forma de Pago  </td>
-                            </tr>
-                              <tr>
-                              <td align="left"> <Itemsfact /> </td>
-                              <td ><FormaPago /> </td>
+                                  <td align="left"> <Itemsfact /> </td>
+                                  <td ><FormaPago /> </td>
                             </tr>
                         </table>
 

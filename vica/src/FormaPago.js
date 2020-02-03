@@ -36,16 +36,19 @@ const StyledTableCell = withStyles(theme => ({
 export default function FormaPago() {
   const classes = useStyles();
   return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <StyledTableCell>Forma de Pago</StyledTableCell>
-            <StyledTableCell>Subtotal</StyledTableCell>
-            <StyledTableCell align="left">Total $</StyledTableCell>
-          </TableRow>
-        </TableHead>
-        </Table>
-      </TableContainer>
+    <div className="FormaPago">
+      <h6 align="center">Formas de Pago</h6>
+          <TableContainer component={Paper}>
+            <Table className={classes.table} aria-label="simple table">
+              <TableHead>
+                <TableRow>
+                  <StyledTableCell>Forma de Pago</StyledTableCell>
+                  <StyledTableCell>Subtotal</StyledTableCell>
+                  <StyledTableCell align="left">Total $</StyledTableCell>
+                </TableRow>
+              </TableHead>
+              </Table>
+            </TableContainer>
+    </div>
     );
   }
