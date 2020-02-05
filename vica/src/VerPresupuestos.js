@@ -61,19 +61,12 @@ import Detalle from "./DetallePres.js"
                         </table>
                       </form>
                         <table className="Consres-Recibos">
-                        <tr>
-                            <td>Presupuestos</td>
-                        </tr>
-                            <td> <Presupuestos />  </td>
+                              <td> <Presupuestos />  </td>
                         </table>
 
                         <table className="Conres-table2">
                             <tr>
-                            <td align="Center"> Detalle del Presupuesto  </td>
-                            </tr>
-                              <tr>
-
-                              <td ><Detalle /> </td>
+                                <td ><Detalle /> </td>
                             </tr>
                         </table>
 

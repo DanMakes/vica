@@ -79,6 +79,17 @@ margin-top: 60px;
   margin-top: 60px;
 }
 
+.Presupuestos
+{
+  margin-left: 20px;
+}
+
+.DetallePres
+{
+ margin-left: 5px;
+ margin-top: 45px;
+}
+
 .LogoHeader{
 padding: 14px 50px 75px ;
 border:outset;
