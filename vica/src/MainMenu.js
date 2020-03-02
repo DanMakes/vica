@@ -26,7 +26,7 @@ class MainMenu extends Component {
           <Encabezado />
             <Tabs defaultTab="vertical-tab-one" vertical>
             <TabList>
-                <Tab tabFor="vertical-tab-one"><img src={IconoRecibo} alt="recibo" align="left" />Consultar Recibos</Tab>
+                <Tab tabFor="vertical-tab-one"><img src={IconoRecibo} alt="recibo" align="left" />Recibos</Tab>
                 <Tab tabFor="vertical-tab-two"><img src={IconoOT} alt="orden de trabajo" align="left" />Ordenes de Trabajo</Tab>
                 <Tab tabFor="vertical-tab-three"><img src={IconoFactura} alt="factura" align="left" />Facturas</Tab>
                   <Tab tabFor="vertical-tab-four"><img src={IconoPresupuesto} alt="presupuesto" align="left" />Presupuestos</Tab>

@@ -23,8 +23,6 @@ class VerFacturas extends Component {
   render() {
     return (
       <div className="Consres">
-
-
                 <div className="Conres-body">
                       <form onSubmit={this.procesar}>
                         <table className="Conres-table">
@@ -39,8 +37,7 @@ class VerFacturas extends Component {
                                <td>Sucursal:</td>
                                <td><select name="Seleccione"><option value="">(TODAS)</option></select></td>
                                <td><input type="Image" src={refresh} className="Consres-logo" alt="refresh"  height="25" width="25" /></td>
-                               <td><input className="Consres-moneda" type="submit" value="Agregar"  /></td>
-                           </tr>
+                         </tr>
                         </table>
                       </form>
                         <table className="Consres-Recibos">

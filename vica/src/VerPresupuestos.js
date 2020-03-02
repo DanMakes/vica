@@ -56,7 +56,7 @@ import Detalle from "./DetallePres.js"
 
                                <td><select name="Seleccione"><option value="">(AMBOS)</option></select></td>
                                <td><input type="Image" title="Actualizar" src={refresh} className="Consres-logo" alt="refresh"  height="25" width="25" /></td>
-                               <td><input className="Consres-moneda" type="submit" value="Agregar"  /></td>
+                            
                            </tr>
                         </table>
                       </form>

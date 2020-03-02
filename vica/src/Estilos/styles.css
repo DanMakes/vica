@@ -1,7 +1,7 @@
 .MainMenu {
   font-family: sans-serif;
   text-align: center;
-  background: #9c9c9c;
+  background:#005B90;
   width: 1320px;
   height: 981px;
 
@@ -13,7 +13,8 @@
   width: 200px;
   height: 705px;
   top: 0;
-  background: white;
+  background:#005B90;
+
 
 
 }
@@ -28,7 +29,7 @@
   flex-direction: column;
   flex-shrink: 0;
   flex-grow: 0;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid yellow;
   margin-right: 1rem;
   }
 
@@ -39,14 +40,14 @@
   font-size: inherit;
   padding: 1em;
   transition: background 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
-  color: black;
+  color: white;
   border-bottom: 1px solid black;
 }
 
 .rwt__tab[aria-selected="false"]:hover,
 .rwt__tab:focus {
   outline: 0;
-  background: orange;
+  background: yellow;
   color: black;
 
 }
@@ -55,7 +56,8 @@
   position: relative;
   border: 2;
   border-color: white;
-  background-color:orange;
+  background-color:yellow;
+  color:blue;
 }
 
 .rwt__tab[aria-selected="true"]:after {
