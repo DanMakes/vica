@@ -92,7 +92,7 @@ margin-top: 60px;
 padding: 14px 50px 75px ;
 border:outset;
 padding:1% 1em;
-background-color: white;
+background-color:yellow;
 height: 70px;
 min-width: 400px;
 width: 1320px;
@@ -104,12 +104,13 @@ width:300px;
 
 .IconoHome
 {
-  width:40px;
+  width:35px;
+  margin-left: 4px;
 }
 
 .IconosAtras
 {
-  width:40px;
+  width:35px;
   margin-left: 400px;
 }
 
@@ -132,18 +133,18 @@ height: 200px;
 display: inline-flex;
 margin-right: 8px;
 margin-top:6px;
+
 }
+
 
 .Container-logo{
 width: 30px;
 margin-top: 30px;
-
 }
 
 .Recibo
 {
   margin-left: 15px;
-
 }
 
 .Logo-PiePagina{
@@ -163,7 +164,9 @@ display: inline-block;
 width: 550px;
 margin-right: 330px;
 margin-left: 200px;
+
 }
+
 
 
 .Container-Redes  {
@@ -171,20 +174,31 @@ margin-top: 40px;
 display: inline-block;
 }
 
+.linkmaps{
+text-decoration: underline;
+color:yellow;
+text-shadow: 1px;
+}
 
+.linkmaps:hover {
+color: white;
+
+}
 
 .ImagenHeader{
 width:300px;
 margin-left: 405px;
 display: inline-flex;
-
+color:#005B90;
+font-style: italic;
+font-size: 25px;
+font-weight: bold;
 }
 
 .NavegationHeader
 {
   height: 50px;
   display: inline-flex;
-
 }
 
 
@@ -197,5 +211,4 @@ font-size: 20px;
 
 .list{
 margin-right: 16px;
-
 }

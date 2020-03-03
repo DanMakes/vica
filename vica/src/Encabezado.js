@@ -17,7 +17,7 @@ class Encabezado extends Component {
                     <tr width="100">
                       <td align="left"  ><img className="list" src={List} alt="Menu"/></td>
                       <td className="TextoMenu">Menu</td>
-                      <td align="center"><img className="ImagenHeader" src={LogoVica} alt="VicaNeumaticos" /></td>
+                      <td align="center"><p className="ImagenHeader"> Vica Neumaticos </p></td>
                       <td ><NavHeader /></td>
                     </tr>
               </table>
@@ -27,3 +27,5 @@ class Encabezado extends Component {
 }
 
 export default Encabezado;
+
+//<img className="ImagenHeader" src={LogoVica} alt="VicaNeumaticos" />
